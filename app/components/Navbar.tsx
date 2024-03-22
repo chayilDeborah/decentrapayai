@@ -6,7 +6,7 @@ import x from '../assets/x.svg'
 
 const Navbar = () => {
   return (
-    <nav className='flex justify-between my-[20px] text-white '>
+    <nav className='flex justify-between my-[22px] text-white '>
         <section>
             <Image src={decentralogo} alt='logo' className='' />
         </section>
