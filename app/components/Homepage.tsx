@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Leverage from './Leverage'
 import About from './About'
 import Features from './Features'
+import Tokenomics from './Tokenomics'
 
 const Homepage = () => {
   return (
@@ -12,6 +13,7 @@ const Homepage = () => {
         <Leverage />
         <About />
         <Features />
+        <Tokenomics />
     </main>
     </>
   )
