@@ -4,6 +4,7 @@ import Leverage from './Leverage'
 import About from './About'
 import Features from './Features'
 import Tokenomics from './Tokenomics'
+import Roadmap from './Roadmap'
 
 const Homepage = () => {
   return (
@@ -14,6 +15,7 @@ const Homepage = () => {
         <About />
         <Features />
         <Tokenomics />
+        <Roadmap />
     </main>
     </>
   )
