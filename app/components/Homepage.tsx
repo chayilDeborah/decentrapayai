@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import Leverage from './Leverage'
 import About from './About'
+import Features from './Features'
 
 const Homepage = () => {
   return (
@@ -10,6 +11,7 @@ const Homepage = () => {
         <Navbar />
         <Leverage />
         <About />
+        <Features />
     </main>
     </>
   )
