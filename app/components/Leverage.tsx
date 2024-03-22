@@ -13,8 +13,8 @@ const Leverage = () => {
                     <h2 className='lg:text-[22px] lg:leading-[26.6px] tracking-[0.46px] '>DPAY DAPP</h2>
                     <Image src={forward} alt='icon' className='' />
                 </button>
-                <button className='flex lg:w-[339px] h-[67px] rounded-[8px] text-[#FFFFFF] ml-[55px] justify-center items-center grad'>
-                    <div className='flex justify-center items-center rounded-[8px] bg-[#0b0b0b] w-[98.5%] h-[99.5%] '>
+                <button className=' lg:w-[339px] h-[67px] rounded-[8px] text-[#FFFFFF] ml-[55px] grad p-[1.7px]'>
+                    <div className='flex justify-center items-center rounded-[8px] bg-[#0b0b0b] flex h-full w-full items-center justify-center'>
                     <h2 className='lg:text-[22px] lg:leading-[26.6px] tracking-[0.46px] '>DPAY TELEGRAM BOT</h2>
                     <Image src={forward} alt='icon' className='' />
                     </div>
