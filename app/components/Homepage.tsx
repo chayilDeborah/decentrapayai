@@ -5,6 +5,7 @@ import About from './About'
 import Features from './Features'
 import Tokenomics from './Tokenomics'
 import Roadmap from './Roadmap'
+import Community from './Community'
 
 const Homepage = () => {
   return (
@@ -16,6 +17,7 @@ const Homepage = () => {
         <Features />
         <Tokenomics />
         <Roadmap />
+        <Community />
     </main>
     </>
   )
