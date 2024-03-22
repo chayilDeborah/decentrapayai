@@ -5,3 +5,6 @@
 html {
   background: #0b0b0b;
 }
+.grad {
+background: linear-gradient(90deg, rgba(0,240,255,1) 0%, rgba(82,0,255,1) 47%, rgba(255,45,247,1) 100%);
+}
