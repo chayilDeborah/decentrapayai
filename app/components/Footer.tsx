@@ -7,12 +7,12 @@ import Link from 'next/link';
 const Footer = () => {
     return (
         <>
-        <div className='grad w-full h-[1px] '></div>
+        <div className='grad w-full h-[1.7px] lg:h-[1px] lg:mt-[0px] mt-[70px] '></div>
         <main className='flex justify-center lg:max-w-7xl w-[95%] lg:w-full mx-auto lg:mt-[46px] '>
-            <section className='w-[85%] my-[45px] text-white flex justify-between '>
+            <section className='w-[85%] my-[45px] text-white lg:flex justify-between '>
             
-                <p className='text-[20px] leading-[24.2px] tracking-[0.2px] '>Copyright 2024 - DecentraPay AI All Rights Reserved</p>
-                <section className='flex my-auto '>
+                <p className='lg:text-[20px] leading-[24.2px] tracking-[0.2px] text-center lg:text-left  '>Copyright 2024 - DecentraPay AI All Rights Reserved</p>
+                <section className='flex my-auto justify-center space-x-[15px] mt-[20px] lg:mt-[0px] lg:mx-[0px] mx-auto '>
                     <Link href='https://t.me/decentrapay_ai'>
                     <Image src={telegram} alt='telegram' className='' />
                     </Link>
