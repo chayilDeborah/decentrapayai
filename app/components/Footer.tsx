@@ -6,9 +6,11 @@ import Link from 'next/link';
 
 const Footer = () => {
     return (
-        <main className='flex justify-center lg:mt-[92px] '>
+        <>
+        <div className='grad w-full h-[1px] '></div>
+        <main className='flex justify-center lg:max-w-7xl w-[95%] lg:w-full mx-auto lg:mt-[46px] '>
             <section className='w-[85%] my-[45px] text-white flex justify-between '>
-            {/* <div className='grad w-full h-[1px] '></div> */}
+            
                 <p className='text-[20px] leading-[24.2px] tracking-[0.2px] '>Copyright 2024 - DecentraPay AI All Rights Reserved</p>
                 <section className='flex my-auto '>
                     <Link href='https://t.me/decentrapay_ai'>
@@ -18,10 +20,11 @@ const Footer = () => {
                     <Image src={x} alt='x-logo' className='lg:mr-[24px] lg:ml-[22px] ' />
                     </Link>
                 </section>
-
             </section>
-
+            
         </main>
+        
+        </>
     )
 }
 

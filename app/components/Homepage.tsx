@@ -11,15 +11,15 @@ import Footer from './Footer'
 const Homepage = () => {
   return (
     <>
-    <main>
-        <Navbar />
+    <main className='lg:w-full w-[95%] lg:mx-[0px] mx-auto '>
+        {/* <Navbar /> */}
         <Leverage />
         <About />
         <Features />
         <Tokenomics />
         <Roadmap />
         <Community />
-        <Footer />
+        {/* <Footer /> */}
     </main>
     </>
   )
