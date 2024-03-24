@@ -22,10 +22,12 @@ const DappsHome = () => {
               <Image src={forward} alt='icon' className='ml-[10px] ' />
             </button>
             </Link>
+            <Link href='/dapp/sendToken'>
             <button className='flex lg:w-[243px] w-[190px] h-[67px] rounded-[10px] justify-center  lg:mt-[0px] mt-[30px]  mx-auto lg:mx-[0px] mt-[30px] items-center grad'>
               <h2 className='lg:text-[22px] lg:leading-[26.6px] tracking-[0.46px] font-bold '>Send a Token</h2>
               <Image src={forward} alt='icon' className='ml-[10px] ' />
             </button>
+            </Link>
             <button className='flex lg:w-[242px]  w-[190px] h-[67px] lg:mt-[44px] rounded-[10px] justify-center  mx-auto lg:mx-[0px]  mt-[30px] items-center grad'>
               <h2 className='lg:text-[22px] lg:leading-[26.6px] tracking-[0.46px] font-bold '>Telegram Bot</h2>
               <Image src={forward} alt='icon' className='ml-[10px] ' />

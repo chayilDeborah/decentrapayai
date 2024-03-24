@@ -37,7 +37,7 @@ const DappPayment = () => {
                                     <textarea className='lg:w-[758px] lg:h-[58px] rounded-[6px] border-[0.5px] border-[#525252] bg-[#13151B] outline outline-none pl-[15px] pt-[15px]  ' />
                                 </section>
                                 <section className='mx-auto lg:w-[310px] mb-[40px] '>
-                                <button className='flex lg:w-[310px] w-[270px] h-[64px] rounded-[10px] justify-center items-center  mx-auto lg:mx-[0px]  grad'>
+                                <button type='submit' className='flex lg:w-[310px] w-[270px] h-[64px] rounded-[10px] justify-center items-center  mx-auto lg:mx-[0px]  grad'>
                                     <h2 className='lg:text-[22px] lg:leading-[26.6px] tracking-[0.46px] font-bold text-[#FFFFFF] '>Create Payment Request</h2>
                                 </button>
                                 </section>
