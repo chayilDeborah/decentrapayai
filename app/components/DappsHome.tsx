@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react';
 import dapp from '../assets/dapp.png'
 import forward from '../assets/forward.svg'
+import Link from 'next/link';
 
 const DappsHome = () => {
   return (
@@ -14,11 +15,13 @@ const DappsHome = () => {
         </div>
         <Image src={dapp} alt='dapp-img' className='lg:h-[416px] mt-[35px] lg:mt-[75px] ' />
       </section>
-      <section className='grid grid-cols-1 justify-center lg:grid-cols-2 lg:w-[65%] lg:mt-[0px] mt-[30px]  lg:w-full w-[90%] mx-auto lg:mx-[0px] '>
+      <section className='grid grid-cols-1 justify-center lg:grid-cols-2 lg:w-[65%] lg:mt-[0px] mt-[30px] w-[90%] mx-auto lg:mx-[0px] '>
+        <Link href='/dapp/payment'>
             <button className='flex lg:w-[370px] w-[270px] h-[67px] rounded-[10px] justify-center items-center  mx-auto lg:mx-[0px]  grad'>
               <h2 className='lg:text-[22px] lg:leading-[26.6px] tracking-[0.46px] font-bold '>Create Payment Request</h2>
               <Image src={forward} alt='icon' className='ml-[10px] ' />
             </button>
+            </Link>
             <button className='flex lg:w-[243px] w-[190px] h-[67px] rounded-[10px] justify-center  lg:mt-[0px] mt-[30px]  mx-auto lg:mx-[0px] mt-[30px] items-center grad'>
               <h2 className='lg:text-[22px] lg:leading-[26.6px] tracking-[0.46px] font-bold '>Send a Token</h2>
               <Image src={forward} alt='icon' className='ml-[10px] ' />
