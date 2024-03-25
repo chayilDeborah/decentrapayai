@@ -12,7 +12,7 @@ const Homepage = () => {
   return (
     <>
     <main className='lg:w-full w-[95%] lg:mx-[0px] mx-auto '>
-        <Navbar />
+        {/* <Navbar /> */}
         <Leverage />
         <About />
         <Features />
