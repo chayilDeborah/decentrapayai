@@ -17,7 +17,7 @@ const myCustomTheme: Theme = {
 		modalOverlay: "...",
 	},
 	colors: {
-		accentColor: "#79C7EF",
+		accentColor: "bg-gradient-to-r from-[#ff2df7] to-[#5200ff]",
 		accentColorForeground: "white",
 		actionButtonBorder: "...",
 		actionButtonBorderMobile: "...",
