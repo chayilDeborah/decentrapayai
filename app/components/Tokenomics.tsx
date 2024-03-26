@@ -44,3 +44,4 @@ const Tokenomics = () => {
 }
 
 export default Tokenomics
+

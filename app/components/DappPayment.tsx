@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react';
 import logonly from '../assets/logonly.svg'
+import SelectForm from './SelectForm';
 
 const DappPayment = () => {
     return (
@@ -26,6 +27,7 @@ const DappPayment = () => {
                                 <section className='mt-[15px] lg:w-[353px] '>
                                     <h3>Payment Amount: (Select token and network carefully)</h3>
                                     <p className='mt-[10px] text-right '>Min: 0.045</p>
+                                    <SelectForm />
                                     <input className='rounded-[6px] border-[0.5px] border-[#525252] bg-[#13151B]' />
                                 </section>
                                 <section>
