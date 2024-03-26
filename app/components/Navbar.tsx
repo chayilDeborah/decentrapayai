@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import decentralogo from '../assets/Decentralogo.png';
 import telegram from '../assets/telegram.svg';
 import x from '../assets/x.svg'
+import menuh from '../assets/menuh.svg'
+import close from '../assets/close.svg'
 import Link from 'next/link';
 
 const Navbar: React.FC = () => {
@@ -19,63 +21,49 @@ const Navbar: React.FC = () => {
         <Image src={decentralogo} alt='logo' className='' />
       </section>
       <div className='lg:hidden'>
-        <button onClick={toggleMenu}>
-          <svg
-            className='w-6 h-6'
-            fill='none'
-            stroke='currentColor'
-            viewBox='0 0 24 24'
-            xmlns='http://www.w3.org/2000/svg'
+      <button onClick={toggleMenu} className='lg:mt-[0px] mt-[20px] lg:mr-[0px] mt-[15px] '>
+      <div className='ml-[50px] '
           >
             {isMenuOpen ? (
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={2}
-                d='M6 18L18 6M6 6l12 12'
-              />
+              <Image src={close} alt='close' className='w-[24px] fixed z-100 close' />
             ) : (
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={2}
-                d='M4 6h16M4 12h16m-7 6h7'
-              />
+              <Image src={menuh} alt='close' className='w-[24px]' />
             )}
-          </svg>
+          </div>
         </button>
       </div>
       <section
-        className={`${
-          isMenuOpen ? 'block fixed inset-0 z-50 bg-black bg-opacity-500 w-full mx-auto' : 'hidden'
-        } lg:flex lg:justify-between lg:w-[869px] lg:text-[16px] my-auto font-bold lg:leading-[19.36px] tracking-[0.2px] my-auto`}
+        className={`${isMenuOpen ? 'block fixed  z-50 p-[50px] lg:p-[0px] lg:text-left  text-center bg-black bg-opacity-500 w-full mx-auto' : 'hidden'
+          } lg:flex lg:justify-between lg:w-[869px] lg:text-[16px] my-auto font-bold lg:leading-[19.36px] tracking-[0.2px] my-auto`}
       >
         <Link href='/' className='my-auto'>
-          <h2 className='leverage my-auto'>Home</h2>
+          <h2 className='leverage my-auto lg:mb-[0px] mb-[15px]'>Home</h2>
         </Link>
-        <Link href='#about'  className='my-auto'>
-          <h2>About Us</h2>
+        <Link href='#about' className='my-auto  '>
+          <h2 className='lg:mb-[0px] mb-[15px] tgbot'>About Us</h2>
         </Link>
-        <Link href='/#features'  className='my-auto'>
-          <h2>Features</h2>
+        <Link href='/#features' className='my-auto '>
+          <h2 className='lg:mb-[0px] mb-[15px] tgbot'>Features</h2>
         </Link>
-        <Link href='/tokenomics'  className='my-auto'>
-          <h2>Tokenomics</h2>
+        <Link href='/tokenomics' className='my-auto '>
+          <h2 className='lg:mb-[0px] mb-[15px] tgbot'>Tokenomics</h2>
         </Link>
-        <Link href='/roadmap'  className='my-auto'>
-          <h2>Roadmap</h2>
+        <Link href='/roadmap' className='my-auto '>
+          <h2 className='lg:mb-[0px] mb-[15px] tgbot'>Roadmap</h2>
         </Link>
         <section className='lg:flex'>
-        <Link href='https://t.me/decentrapay_ai' className='my-auto'>
-          <Image src={telegram} alt='telegram' className='' />
-        </Link>
-        <Link href='https://twitter.com/decentrapayai' className='my-auto'>
-          <Image src={x} alt='x-logo' className='lg:mr-[24px] lg:ml-[22px] ' />
-        </Link>
-        <Link href='https://docs.decentrapay.org/' className='my-auto'>
-          <button className='tracking-[0.46px] grad lg:w-[177px] lg:h-[49px] my-auto rounded-[8px] hover:bg-[#ff2df7] '>Documentation</button>
-        </Link>
-      </section>
+          <div className='flex space-x-[15px] lg:w-full w-[30%] mx-auto lg:mx-[0px] lg:mb-[0px] mb-[15px] '>
+            <Link href='https://t.me/decentrapay_ai' className='my-auto'>
+              <Image src={telegram} alt='telegram' className='' />
+            </Link>
+            <Link href='https://twitter.com/decentrapayai' className='my-auto'>
+              <Image src={x} alt='x-logo' className='lg:mr-[24px] lg:ml-[22px] ' />
+            </Link>
+          </div>
+          <Link href='https://docs.decentrapay.org/' className='my-auto'>
+            <button className='tracking-[0.46px] grad w-[177px] hover:leverage h-[49px] my-auto rounded-[8px] hover:bg-[#ff2df7] '>Documentation</button>
+          </Link>
+        </section>
       </section>
     </nav>
   );

@@ -9,7 +9,7 @@ const Roadmap = () => {
             <section className='text-center text-white w-full '>
                 <h1 className='lg:text-[40px] text-[28px] lg:leading-[48.4px] '>Our<span className='leverage'> Roadmap</span></h1>
                 <p className='font-medium lg:text-[18px] text-[15px] leading-[29px] lg:leading-[21.78px] tracking-[0.2px] mt-[10px] lg:mt-[20px] mb-[30px] lg:mb-[50px] lg:w-[68%] mx-auto '>Lorem ipsum dolor sit amet consectetur. Massa tincidunt malesuada ipsum imperdiet pulvinar nunc enim nulla. Velit tincidunt tellus tincidunt malesuada nibh porttitor.</p>
-                <section className='grid grid-cols-1 lg:grid-cols-3 flex justify-center lg:w-full w-[90%] mx-auto lg:mx-[0px] space-y-[40px] lg:space-y-[0px]  '>
+                <section className='grid grid-cols-1 lg:grid-cols-3 flex justify-center lg:w-[90%] w-[90%] mx-auto  space-y-[40px] lg:space-y-[0px]  '>
                     <div className='border border-[1px] rounded-[10px] pl-[27px]  w-[336px] '>
                         <Image src={feat} alt='feature-img' className='mx-auto mb-[20px] lg:mt-[40px] ' />
                         <h1 className='font-extrabold text-[25px] leading-[30.2px] tracking-[0.2px]  '>PHASE ONE</h1>
