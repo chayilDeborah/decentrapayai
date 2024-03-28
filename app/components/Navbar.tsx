@@ -16,25 +16,25 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className='flex justify-between my-[22px] text-white'  data-aos="fade-in">
+    <nav className='flex justify-between my-[22px] text-white' >
       <section>
         <Image src={decentralogo} alt='logo' className='' />
       </section>
-      <div className='lg:hidden'  data-aos="fade-in">
+      <div className='lg:hidden w-[6%] '>
       <button onClick={toggleMenu} className='lg:mt-[0px] mt-[20px] lg:mr-[0px] mt-[15px] '>
-      <div className='ml-[50px] '
+      <div className='-mr-[40px] '
           >
             {isMenuOpen ? (
-              <Image src={close} alt='close' className='w-[24px] fixed z-100 close' />
+              <Image src={close} alt='close' className='w-[24px] -mr-[35px] fixed z-100 close' />
             ) : (
               <Image src={menuh} alt='close' className='w-[24px]' />
             )}
           </div>
         </button>
       </div>
-      <section  data-aos="fade-in"
-        className={`${isMenuOpen ? 'block fixed  z-50 p-[50px] lg:p-[0px] lg:text-left  text-center bg-black bg-opacity-500 w-full mx-auto' : 'hidden'
-          } lg:flex lg:justify-between lg:w-[869px] lg:text-[16px] my-auto font-bold lg:leading-[19.36px] tracking-[0.2px] my-auto`}
+      <section 
+        className={`${isMenuOpen ? 'block fixed  z-50 p-[50px] lg:p-[0px] lg:text-left  text-center bg-black bg-opacity-500 w-[87%] mx-auto' : 'hidden'
+          } lg:flex lg:justify-between w-[95%] lg:w-[869px] bg-black lg:text-[16px] my-auto font-bold lg:leading-[19.36px] tracking-[0.2px] my-auto`}
       >
         <Link href='/' className='my-auto'>
           <h2 className='leverage my-auto lg:mb-[0px] mb-[15px]'>Home</h2>

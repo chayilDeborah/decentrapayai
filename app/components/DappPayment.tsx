@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import React, { useState } from 'react';
 import logonly from '../assets/logonly.svg'
-import SelectForm from './SelectForm';
 import { Menu, Transition } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/24/solid';
 
