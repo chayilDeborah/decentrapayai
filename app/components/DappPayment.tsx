@@ -1,9 +1,23 @@
+"use client"
 import Image from 'next/image'
-import React from 'react';
+import React, { useState } from 'react';
 import logonly from '../assets/logonly.svg'
 import SelectForm from './SelectForm';
+import { Menu, Transition } from '@headlessui/react';
+import { ChevronDownIcon } from '@heroicons/react/24/solid';
+
+const tokens = [
+    { symbol: 'ETH', logo: '/eth.png' },
+    { symbol: 'SOL', logo: '/sol.png' },
+    { symbol: 'ETH', logo: '/eth.png' },
+    { symbol: 'SOL', logo: '/sol.png' },
+    // { symbol: 'WEN', logo: '/wen-logo.png' },
+];
 
 const DappPayment = () => {
+
+    const [selectedToken, setSelectedToken] = useState(tokens[0]);
+
     return (
         <main className='flex justify-center lg:mt-[92px] mt-[60px] mb-[100px] lg:w-full w-[95%] lg:mx-[0px] mx-auto lg:mb-[200px] text-white' data-aos="zoom-in">
             <div>
@@ -27,8 +41,55 @@ const DappPayment = () => {
                                 <section className='mt-[15px] lg:w-[353px] '>
                                     <h3>Payment Amount: (Select token and network carefully)</h3>
                                     <p className='mt-[10px] text-right '>Min: 0.045</p>
-                                    <SelectForm />
-                                    <input className='rounded-[6px] border-[0.5px] border-[#525252] bg-[#13151B]' />
+                                    <section className='flex mt-[15px] justify-between rounded-[6px] w-[287px] lg:w-[344px] h-[77px]  border-[0.5px] border-[#525252] bg-[#13151B] outline outline-none pl-[15px] pr-[10px] ' >
+                                        <input className='text-[18px] leading-[21.78px] w-[140px] lg:w-[190px] tracking-[0.2px] rounded-[6px]    bg-[#13151B] outline outline-none ' placeholder='Enter Amount' />
+                                        <Menu as="div" className="relative inline-block my-auto text-left  ">
+                                            <div>
+                                                <Menu.Button className="inline-flex justify-center w-[123px] h-[57px] items-center px-4 py-2 text-[17px] font-medium text-white bg-[#22252F] border border-[#22252F] rounded-[7px] leading-[20.5px] shadow-sm  focus:outline-none focus:ring-0 focus:ring-none focus:ring-offset-0 focus:ring-offset-none">
+                                                    <Image width={40}
+                                                        height={40}
+                                                        src={selectedToken.logo}
+                                                        alt={selectedToken.symbol}
+                                                        className="w-[30px] h-[30px] mr-2"
+                                                    />
+                                                    {selectedToken.symbol}
+                                                    <ChevronDownIcon className="w-5 h-5 ml-2 -mr-1" aria-hidden="true" />
+                                                </Menu.Button>
+                                            </div>
+                                            <Transition
+                                                as={React.Fragment}
+                                                enter="transition ease-out duration-100"
+                                                enterFrom="transform opacity-0 scale-95"
+                                                enterTo="transform opacity-100 scale-100"
+                                                leave="transition ease-in duration-75"
+                                                leaveFrom="transform opacity-100 scale-100"
+                                                leaveTo="transform opacity-0 scale-95"
+                                            >
+                                                <Menu.Items className="absolute right-0 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                                    {tokens.map((token, index) => (
+                                                        <Menu.Item key={index}>
+                                                            {({ active }) => (
+                                                                <button
+                                                                    className={`${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'
+                                                                        } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
+                                                                    onClick={() => setSelectedToken(token)}
+                                                                >
+                                                                    <Image width={40}
+                                                                        height={40}
+                                                                        src={token.logo}
+                                                                        alt={token.symbol}
+                                                                        className="w-5 h-5 mr-2"
+
+                                                                    />
+                                                                    {token.symbol}
+                                                                </button>
+                                                            )}
+                                                        </Menu.Item>
+                                                    ))}
+                                                </Menu.Items>
+                                            </Transition>
+                                        </Menu>
+                                    </section>
                                 </section>
                                 <section>
                                     <h3 className='my-[15px] '>Payment Receiver Wallet: (100% Private. It will not be visible to payer.)</h3>
