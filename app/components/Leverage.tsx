@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Leverage = () => {
   return (
-    <main className='flex justify-center mt-[92px] lg:w-full w-[95%] lg:mx-[0px] mx-auto ' id='leverage'>
+    <main className='flex justify-center mt-[92px] lg:w-full w-[95%] lg:mx-[0px] mx-auto ' id='leverage'   data-aos="fade-in">
         <section className='text-center'>
             <h1 className='lg:text-[60px] text-[24px] lg:leading-[72.6px] font-bold tracking-[0.2px] lg:w-[80%] mx-auto leverage '>Leveraging Blockchain for Enhanced Anonymity and Security in Escrow-Based Digital Transactions</h1>
             <h4 className='text-[#FFFFFF] font-medium text-[14px] lg:text-[18px] lg:leading-[21.78px] leading-[24px] tracking-[0.2px] mx-auto mt-[30px] mb-[50px] lg:w-[70%] '>DecentraPay is a complete anonymous tool that can help users to request payments and send cryptocurrencies in a full privacy process without sender&apos;s or receiver&apos;s wallet being traceable to anyone.</h4>

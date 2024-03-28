@@ -2,7 +2,7 @@ import React from 'react'
 
 const Tokenomics = () => {
     return (
-        <main className='flex justify-center mt-[70px] lg:mt-[140px] '>
+        <main className='flex justify-center mt-[70px] lg:mt-[140px] ' data-aos="fade-down">
             <section className='lg:w-[87%] w-[90%] rounded-[10px] grad p-[2.3px]  '>
                 <div className='flex justify-center rounded-[10px] bg-[#0b0b0b] h-full w-full'>
                     <div>

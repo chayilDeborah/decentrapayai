@@ -6,7 +6,7 @@ import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const DappNavbar = () => {
   return (
-    <nav className='flex justify-between my-[22px] text-white '>
+    <nav className='flex justify-between my-[22px] text-white ' data-aos="fade-in">
       <section className='flex justify-between w-[95%] lg:mx-[0px] mx-auto mt-[10px] lg:w-full '>
         <Link href='/dapp'>
           <Image src={decentralogo} alt='logo' className='lg:w-full w-[110px] ' />

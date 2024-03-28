@@ -5,7 +5,7 @@ import cube from '../assets/cube.png'
 
 const About = () => {
   return (
-    <main className='flex justify-center lg:mt-[200px] mt-[100px] ' id='about'>
+    <main className='flex justify-center lg:mt-[200px] mt-[100px] ' id='about'  data-aos="fade-up">
         <section className='w-full lg:flex lg:space-x-[50px] '>
             <div className='text-white'>
                 <h1 className='lg:text-[40px] text-[28px] lg:text-left text-center lg:leading-[48.4px] '><span className='leverage'>About</span> DecentraPay</h1>

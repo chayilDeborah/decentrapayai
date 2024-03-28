@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <>
         <div className='grad w-full h-[1.7px] lg:h-[1.5px] lg:mt-[0px] mt-[70px] '></div>
-        <main className='flex justify-center lg:max-w-7xl w-[95%] lg:w-full mx-auto lg:mt-[46px] '>
+        <main className='flex justify-center lg:max-w-7xl w-[95%] lg:w-full mx-auto lg:mt-[46px] '  data-aos="fade-in">
             <section className='w-[85%] my-[45px] text-white lg:flex justify-between '>
             
                 <p className='lg:text-[20px] leading-[24.2px] tracking-[0.2px] text-center lg:text-left  '>Copyright 2024 - DecentraPay AI All Rights Reserved</p>

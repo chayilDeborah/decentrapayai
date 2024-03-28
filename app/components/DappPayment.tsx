@@ -5,7 +5,7 @@ import SelectForm from './SelectForm';
 
 const DappPayment = () => {
     return (
-        <main className='flex justify-center lg:mt-[92px] mt-[60px] mb-[100px] lg:w-full w-[95%] lg:mx-[0px] mx-auto lg:mb-[200px] text-white'>
+        <main className='flex justify-center lg:mt-[92px] mt-[60px] mb-[100px] lg:w-full w-[95%] lg:mx-[0px] mx-auto lg:mb-[200px] text-white' data-aos="zoom-in">
             <div>
                 <section className=' lg:w-[858px]  text-white rounded-[10px] p-[1.3px] grad'>
                     <div className='flex justify-center rounded-[10px] bg-[#13151B] h-full w-full'>

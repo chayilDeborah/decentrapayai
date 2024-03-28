@@ -4,7 +4,7 @@ import forward from '../assets/forward.svg'
 
 const Community = () => {
   return (
-    <main className='flex justify-center lg:mt-[140px] mt-[80px] lg:mb-[200px] '>
+    <main className='flex justify-center lg:mt-[140px] mt-[80px] lg:mb-[200px] '  data-aos="fade-down">
         <section className='lg:w-[87%] w-[90%] rounded-[10px] grad p-[2.3px]  '>
         <div className='flex justify-center rounded-[10px] bg-[#0b0b0b] h-full mb-[60px] lg:mb-[0px] w-full'>
             <div className='w-[90%] lg:mt-[70px] mt-[35px] lg:flex '>

@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const DappsHome = () => {
   return (
-    <main className='flex justify-center lg:mt-[22px] mt-[45px] mb-[100px] lg:w-full w-[95%] lg:mx-[0px] mx-auto lg:mb-[200px] text-white'>
+    <main className='flex justify-center lg:mt-[22px] mt-[45px] mb-[100px] lg:w-full w-[95%] lg:mx-[0px] mx-auto lg:mb-[200px] text-white' data-aos="fade-in">
       <div>
       <section className='lg:flex justify-center lg:w-full lg:mx-[0px] mx-auto  '>
         <div className='text-center lg:text-left' >
