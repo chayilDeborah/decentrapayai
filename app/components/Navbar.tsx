@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
             {isMenuOpen ? (
               <Image src={close} alt='close' className='w-[24px] -mr-[35px] fixed z-100 close' />
             ) : (
-              <Image src={menuh} alt='close' className='w-[24px]' />
+              <Image src={menuh} alt='close' className=' w-[45px] -ml-[25px] -mt-[10px] ' />
             )}
           </div>
         </button>
