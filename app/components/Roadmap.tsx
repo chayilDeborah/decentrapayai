@@ -5,7 +5,7 @@ import feat from '../assets/feat.png'
 
 const Roadmap = () => {
     return (
-        <main className='flex justify-center lg:mt-[185px]  mt-[100px] w-full ' data-aos="zoom-in">
+        <main className='flex justify-center lg:mt-[185px]  mt-[100px] w-full ' id='roadmap' data-aos="zoom-in">
             <section className='text-center text-white w-full '>
                 <h1 className='lg:text-[40px] text-[28px] lg:leading-[48.4px] '>Our<span className='leverage'> Roadmap</span></h1>
                 <p className='font-medium lg:text-[18px] text-[15px] leading-[29px] lg:leading-[21.78px] tracking-[0.2px] mt-[10px] lg:mt-[20px] mb-[30px] lg:mb-[50px] lg:w-[68%] mx-auto '>Lorem ipsum dolor sit amet consectetur. Massa tincidunt malesuada ipsum imperdiet pulvinar nunc enim nulla. Velit tincidunt tellus tincidunt malesuada nibh porttitor.</p>

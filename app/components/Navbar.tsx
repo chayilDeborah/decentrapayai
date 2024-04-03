@@ -45,10 +45,10 @@ const Navbar: React.FC = () => {
         <Link href='/#features' className='my-auto '>
           <h2 className='lg:mb-[0px] mb-[15px] tgbot'>Features</h2>
         </Link>
-        <Link href='/tokenomics' className='my-auto '>
+        <Link href='/#tokenomics' className='my-auto '>
           <h2 className='lg:mb-[0px] mb-[15px] tgbot'>Tokenomics</h2>
         </Link>
-        <Link href='/roadmap' className='my-auto '>
+        <Link href='/#roadmap' className='my-auto '>
           <h2 className='lg:mb-[0px] mb-[15px] tgbot'>Roadmap</h2>
         </Link>
         <section className='lg:flex'>
